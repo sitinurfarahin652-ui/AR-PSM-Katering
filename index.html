@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>AR PSM Katering</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.4.7/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style="margin: 0; overflow: hidden;">
+
+	<a-scene
+		embedded
+		vr-mode-ui="enabled: false"
+		arjs="sourceType: webcam; debugUIEnabled: true;">
+
+		<a-marker preset="hiro">
+			<a-entity position="0 0.5 0">
+
+				<!-- Kelopak bunga carrot -->
+				<a-sphere position="0.35 0 0"
+					radius="0.25" scale="1 0.35 0.65"
+					color="#FF8C00"></a-sphere>
+
+				<a-sphere position="0.18 0 0.31"
+					radius="0.25" scale="1 0.35 0.65"
+					color="#FFA500"></a-sphere>
+
+				<a-sphere position="-0.18 0 0.31"
+					radius="0.25" scale="1 0.35 0.65"
+					color="#FF8C00"></a-sphere>
+
+				<a-sphere position="-0.35 0 0"
+					radius="0.25" scale="1 0.35 0.65"
+					color="#FFA500"></a-sphere>
+
+				<a-sphere position="-0.18 0 -0.31"
+					radius="0.25" scale="1 0.35 0.65"
+					color="#FF8C00"></a-sphere>
+
+				<a-sphere position="0.18 0 -0.31"
+					radius="0.25" scale="1 0.35 0.65"
+					color="#FFA500"></a-sphere>
+
+				<!-- Bahagian tengah bunga -->
+				<a-sphere position="0 0.05 0"
+					radius="0.14"
+					color="#FFD700"></a-sphere>
+
+			</a-entity>
+		</a-marker>
+
+		<a-entity camera></a-entity>
+
+	</a-scene>
+
+</body>
+</html>
